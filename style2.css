@@ -1,0 +1,1741 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --primary-color: rgb(188, 188, 205);
+}
+
+body{
+  overflow-x: hidden;
+  background: linear-gradient(90deg,#6c1e2a,#7792b7);
+  color: var(--primary-color);
+}
+
+.head {
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 30px;
+    font-size: 23px;
+    gap: 20px; /* Adjust the gap between logo and nav as needed */
+    position: fixed;
+    z-index: 1000;
+    width : 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,#4a1c23,#7792b7); 
+    box-shadow: 1px 1px 50px white;
+  }
+  
+.logo {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  padding-left: 5rem;
+}
+  
+.navBar {
+  display: flex;
+  justify-content: center;
+}
+  
+.navBar a {
+  text-decoration: none; 
+  padding: 10px; 
+  margin-right:25px;
+  color: var(--primary-color);
+}
+
+.navBar a:hover{
+  font-size: 24px;
+  opacity: 80%;
+}
+
+/*---Home Button---*/
+  
+.home {
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+  box-shadow: 1px 1px 50px white;
+}
+  
+.aboutHome {
+  text-align: left; /* Align text to the left */
+  width: 50%;
+  font-size: 25px;
+  padding:6rem;
+  line-height: 1.2;
+}
+
+.aboutHome h1, .aboutHome h2 {
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.Pic {
+  max-width: 100%; /* Make sure the image is responsive */
+  height: 23rem; /* Maintain the aspect ratio */
+  border-radius: 25%;
+  box-shadow: 0px 3px 15px rgba(99, 24, 24, 0.5);
+  opacity : 80%;
+}
+.Pic:hover{
+  opacity : 90%;
+}
+
+.readBtn {
+  border:2px solid rgba(99, 24, 24, 0.5);
+  color: var(--primary-color);
+  border: none;
+  border-radius : 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 22px;
+  background: linear-gradient(90deg,#482026,#4d6587); 
+}
+
+.readBtn:hover {
+  font-size: 22.5px;
+  opacity : 70%;
+}
+
+/*-----about section-----*/
+.about{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px white;
+}
+
+.image2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  width:40%;
+}
+
+.aboutPic{
+  max-width: 100%;
+  height: 23rem; /* Maintain the aspect ratio */
+  border-radius: 25%;
+  box-shadow: 0px 3px 15px rgba(99, 24, 24, 0.5);
+  opacity : 80%;
+}
+
+.aboutPic:hover{
+  opacity : 90%;
+}
+
+.aboutMe{
+  display: flexbox;
+  text-align: left; /* Align text to the left */
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  line-height: 1.2;
+  margin-top: 5rem;
+}
+
+.aboutMe h1{
+  font-size: 50px;
+}
+
+.bioData{
+  padding-top: 2rem;
+  font-size: 25px;
+}
+
+.socialMedia{
+  display: flex;
+  align-items: center;
+  width:100%;
+  justify-content: flex-start;
+  gap:25px;
+  padding:1rem 0rem 1rem 0rem;
+}
+
+.socialMedia a{
+  text-decoration: none;
+  color:#a0b2cc;
+  font-size: 30px;
+}
+
+.socialMedia a:hover{
+  font-size: 31px;
+  opacity: 80%;
+}
+
+.btn{
+  text-decoration: none;
+  color:#a0b2cc;
+  font-size: 30px;
+}
+
+.btn:hover{
+  font-size: 31px;
+  opacity: 80%;
+}
+
+/*------skill section ------*/
+.skillsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-shadow: 1px 1px 10px white;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top:5rem;
+}
+
+.heading{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border:2px solid rgba(99, 24, 24, 0.5);
+  border: none;
+  border-radius : 10px;
+  padding: 4px 8px;
+  background: linear-gradient(90deg,#482026,#4d6587); 
+}
+
+.skill{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.htmlLogo{
+  font-size: 3rem;
+  color: orangered;
+  margin-top: 0.5rem;
+  margin-left: 5px;
+}
+.cssLogo{
+  font-size: 3rem;
+  color: rgb(52, 180, 231);
+  margin-top: 0.5rem;
+  margin-left: 5px;
+}
+.jsLogo{
+  font-size: 3rem;
+  color:rgb(188, 188, 6) ;
+  padding-top: 0.5rem;
+  margin-left: 2px;
+}
+.tailwindLogo{
+  height: 4rem;
+  width:3rem;
+}
+.reactLogo{
+  font-size: 3rem;
+  color: rgb(52, 180, 231);
+  margin-top: 0.5rem;
+  margin-left: 1px;
+}
+
+.progress{
+  width:25rem;
+  margin-left: 5rem;
+}
+
+.skill-name{
+  font-size:18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin : 20px 0;
+}
+
+.skill-bar{
+  height : 12px;
+  background : transparent;
+  border-radius : 3px;
+  border : 1px solid darkred;
+}
+
+.skill-per{
+  height : 12px;
+  border-radius : 3px;
+  position:relative;
+  animation : fillBars 2.5s 1;
+  background: linear-gradient(90deg,#482026,#4d6587);
+}
+
+.skill-per::before{
+  content : attr(per);
+  position: absolute;
+  padding : 2px 4px;
+  background: linear-gradient(90deg,#482026,#4d6587);
+  border: 1px solid linear-gradient(90deg,#482026,#4d6587);
+  border-radius: 4px;
+  font-size: 12px;
+  top : -35px;
+  right : 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position : absolute;
+  width : 10px;
+  height: 10px;
+  background: linear-gradient(90deg,#482026,#4d6587);
+  top:-21.5px;
+  right :0;
+  transform : translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+      width:0;
+  } 
+  to{
+      width:100%;
+  }
+}
+
+/*-----Certificate section-----*/
+.certificateSection{
+  height:100vh;
+  box-shadow: 1px 1px 10px white;
+}
+
+.certificates{
+  width: 100%;
+  padding-top:8rem;
+}
+
+.heading2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading2 h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  border:2px solid rgba(99, 24, 24, 0.5);
+  border: none;
+  border-radius : 10px;
+  padding: 4px 8px;
+  background: linear-gradient(90deg,#482026,#4d6587);
+}
+
+.certificateDiv{
+  display: flex;
+  flex-direction: rows;
+  align-items: center;
+  padding:1rem;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  font-size: 22px;
+}
+
+.aboutCft{
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  border:1px solid var(--primary-color);
+  padding:7px;
+  padding-left: 1rem;
+}
+
+.main-certificate2{
+  padding-top: 2rem;
+}
+.aboutCft a{
+  margin-top: 1rem; 
+  color:#a0b2cc;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10%;
+  padding:5px;
+  background: linear-gradient(90deg,#482026,#4d6587);
+}
+
+.aboutCft a:hover{
+  font-size: 20.5px;
+  opacity: 80%;
+}
+
+/*----Project Section----*/
+.projectSection{
+  height:100vh;
+  box-shadow: 1px 1px 10px white;
+}
+
+.outerDiv{
+  width: 100%;
+  padding-top:8rem;
+}
+
+.projectDiv{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width : 100%;
+}
+
+.ProjectDetails{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width : 40%;
+  font-size: 1.5rem;
+  color:var(--primary-color);
+}
+
+.ProjectDetails a{
+  color : var(--primary-color);
+  font-size: 25px;
+  margin-top: 1.3rem;
+}
+
+.ProjectDetails a:hover{
+  font-size: 26px;
+  opacity: 80%;
+}
+
+.ProjectDetails a i{
+  margin-right: 1rem;
+  font-size: 30px;
+}
+
+.ProjectDetails a i:hover{
+  font-size: 31px;
+  opacity: 80%;
+}
+
+.ProjectDetails span{
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.newswebsite{
+  height:20rem;
+  width : 100%;
+  padding-left :2rem; 
+}
+
+/*-----Contact Section----*/
+.contactSection{
+  height:100vh;
+  box-shadow: 1px 1px 10px white;
+}
+
+.contactDiv{
+  width: 100%;
+  padding-top:8rem;
+}
+
+.contactContainer{
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contactItem{
+  display:flex;
+  margin: 1rem;
+}
+
+.contactItem a{
+  text-decoration: none;
+  color: rgb(193, 146, 193);
+}
+
+.contactItem a:hover{
+  color: rgb(172, 121, 172);
+}
+
+.contactItem .contactIcon{
+  margin-right:1rem;
+  margin-top: 0.2rem;
+}
+
+.contactTitle{
+  margin-bottom: 0.2rem;
+}
+
+.contactDetails {
+  text-align: left;
+  font-size: 18px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:500px;
+}
+
+.formGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.formInput {
+  flex: 1;
+}
+
+.inputControl,.contactBtn {
+  width: 100%;
+  background-color: transparent;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  color:var(--primary-color);
+  border: 1px solid rgb(239, 242, 243);
+}
+
+input::placeholder{
+  color:var(--primary-color);
+} 
+
+textarea::placeholder{
+  color:var(--primary-color);
+} 
+
+.textArea {
+  resize: none;
+}
+
+.contactBtn {
+  padding: 0.75rem 2rem;
+  background-color:transparent;
+  color: --primary-color;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.contactBtn:hover{
+  font-size:1.4rem;
+}
+
+/*----copyright section----*/
+.copyrightSection{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width : 500px) and (min-width : 0px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .home{
+    height:110vh;
+  }
+  .head {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    display: flex;
+    width:100%;
+    padding-left: 8rem;
+  }
+  
+  .navBar a {
+    text-decoration: none; 
+    padding:1px;
+    margin-right:10px;
+  }
+
+  .navBar a:hover{
+    font-size: 14px;
+    opacity: 80%;
+  }
+
+  /*---Home Button---*/
+  .aboutHome {
+    font-size: 20px;
+    padding:10px;
+    line-height:1.4;
+    padding-top:6.5rem;
+  }
+
+  .aboutHome h1, .aboutHome h2 {
+    margin: 0px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Pic {
+    max-width: 100%;
+    height: 16rem; 
+  }
+
+  .readBtn {
+    font-size: 17px;
+    margin-top: 3px;
+    padding: 10px;
+  }
+
+  .readBtn:hover {
+    font-size: 16px;
+    opacity : 70%;
+  }
+
+  /*-----about section-----*/
+  .about{
+    height:120vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image2{
+    width:100%;
+    padding-top: 1rem;
+  }
+
+  .aboutPic{
+    height: 17rem;
+  }
+
+  .aboutMe{
+    width: 100%;
+    line-height: 1.2;
+    margin-top: 1rem;
+  }
+
+  .aboutMe h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .bioData{
+    font-size: 20px;
+    padding:.5rem 2rem;
+  }
+
+  .socialMedia{
+    width:100%;
+    justify-content: center;
+    gap:25px;
+    padding:0.7rem 0rem 0.7rem 0rem;
+  }
+
+  .socialMedia a{
+    font-size: 28px;
+  }
+
+  .socialMedia a:hover{
+    font-size: 26px;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  .btn:hover{
+    font-size: 29px;
+  }
+
+  /*----Skillss----*/
+  .skillsection{
+    height: 100vh;
+  }
+  
+  .mainDiv {
+    padding-left:2rem;
+  }
+  
+  .heading{
+    font-size: 1.5rem;
+    margin-bottom: 2rem; 
+  }
+  
+  .skill{
+    margin-bottom: .5rem;
+  }
+  
+  .htmlLogo{
+    font-size: 2rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .cssLogo{
+    font-size: 2rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .jsLogo{
+    font-size: 2rem;
+    padding-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .tailwindLogo{
+    height: 4.2rem;
+    width:2.3rem;
+    margin-left: -7px;
+    padding-top: 20px;
+  }
+  .reactLogo{
+    font-size: 2rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  
+  .progress{
+    width:16rem;
+    margin-left: 3rem;
+  }
+  
+  .skill-name{
+    font-size:15px;
+    font-weight: 600;
+    margin : 15px 0;
+  }
+  
+  .skill-bar,.skill-per{
+    height : 10px;
+  }
+
+  /*-----Certificate section-----*/
+  .certificateSection{
+    height:170vh;
+  }
+
+  .certificates{
+    width: 100%;
+    padding-top:8rem;
+  }
+
+  .heading2 h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .certificateDiv{
+    display: grid;
+    padding:3rem;
+    gap: 3rem;
+    font-size: 18px;
+  }
+
+  .main-certificate1{
+    padding-top: 2rem;
+  }
+
+  .main-certificate2{
+    padding-top: .5rem;
+  }
+
+  .aboutCft a{
+    margin-top: 1rem;
+    font-size: 18px;
+    border-radius: 10%;
+    padding:5px;
+  }
+
+  .aboutCft a:hover{
+    font-size: 19px;
+  }
+
+  /*----project section----*/
+  .projectSection{
+    height:110vh;
+  }
+  
+  .outerDiv{
+    width: 100%;
+    padding-top:8rem;
+  }
+  
+  .projectDiv{
+    display:grid;
+    flex-direction:column;
+    width : 100%;
+  }
+  
+  .ProjectDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width : 100%;
+    font-size: 1.2rem;
+  }
+  
+  .ProjectDetails a{
+    font-size: 21px;
+    margin-top: .5rem;
+  }
+  
+  .ProjectDetails a:hover{
+    font-size: 21.5px;
+  }
+  
+  .ProjectDetails a i{
+    margin-right: 1rem;
+    font-size: 24px;
+  }
+  
+  .ProjectDetails a i:hover{
+    font-size: 24.5px;
+  }
+  
+  .ProjectDetails span{
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .newswebsite{
+    height:14rem;
+    width : auto;
+    padding-left :2rem; 
+  }
+
+  /*---contact section---*/
+  .contactSection{
+    height:160vh;
+  }
+  
+  .contactDiv{
+    width: 100%;
+    padding-top:8rem;
+  }
+  
+  .contactContainer{
+    display:grid;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .contactItem{
+    display:flex;
+    margin: 2rem;
+  }
+  
+  .contactDetails {
+    text-align: left;
+    font-size: 18px;
+    padding:2rem 4rem;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width:500px;
+    padding:0rem 5rem 5rem 5rem;
+  }
+
+  /*----copyright section----*/
+  .copyrightSection{
+    font-size: 15px;
+  }
+}
+
+@media(min-width : 501px) and (max-width : 750px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .home{
+    height:110vh;
+  }
+
+  .head {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo {
+    padding-left: 1rem;
+  }
+  
+  .navBar a {
+    padding:1px;
+    margin-right:10px;
+  }
+
+  .navBar a:hover{
+    font-size: 18px;
+  }
+
+  /*---Home Button---*/
+  
+  .aboutHome {
+    font-size: 24px;
+    padding:10px;
+    line-height:1.4;
+    padding-top:6.5rem;
+  }
+
+  .aboutHome h1, .aboutHome h2 {
+    margin: 0px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Pic {
+    max-width: 100%;
+    height: 19rem; 
+  }
+
+  .readBtn {
+    font-size: 17px;
+    margin-top: 3px;
+    padding: 10px;
+  }
+
+  .readBtn:hover {
+    font-size: 16px;
+    opacity : 70%;
+  }
+
+  /*-----about section-----*/
+  .about{
+    height:105vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image2{
+    width:100%;
+    padding-top: 1rem;
+  }
+
+  .aboutPic{
+    height: 17rem;
+  }
+
+  .aboutMe{
+    width: 100%;
+    line-height: 1.2;
+    margin-top: 1rem;
+  }
+
+  .aboutMe h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .bioData{
+    font-size: 20px;
+    padding:.5rem 2rem;
+  }
+
+  .socialMedia{
+    width:100%;
+    justify-content: center;
+    gap:25px;
+    padding:0.7rem 0rem 0.7rem 0rem;
+  }
+
+  .socialMedia a{
+    font-size: 28px;
+  }
+
+  .socialMedia a:hover{
+    font-size: 26px;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  .btn:hover{
+    font-size: 29px;
+  }
+
+  /*----Skillss----*/
+  .mainDiv {
+    padding-left:1rem;
+  }
+  
+  .heading{
+    font-size: 1.9rem;
+    margin-bottom: 2rem; 
+  }
+  
+  .skill{
+    margin-bottom: .5rem;
+  }
+  
+  .htmlLogo{
+    font-size: 2.3rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .cssLogo{
+    font-size: 2.3rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .jsLogo{
+    font-size: 2.3rem;
+    padding-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .tailwindLogo{
+    height: 4rem;
+    width:2.6rem;
+    margin-left: -7px;
+    padding-top: 20px;
+  }
+  .reactLogo{
+    font-size: 2.3rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  
+  .progress{
+    width:18rem;
+    margin-left: 3rem;
+  }
+  
+  .skill-name{
+    font-size:17px;
+    font-weight: 600;
+    margin : 15px 0;
+  }
+  
+  .skill-bar,.skill-per{
+    height : 12px;
+  }
+
+  /*-----Certificate section-----*/
+  .certificateSection{
+    height:175vh;
+  }
+
+  .certificates{
+    width: 100%;
+    padding-top:8rem;
+  }
+
+  .heading2 h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .certificateDiv{
+    display: grid;
+    padding:2.5rem;
+    gap: 3rem;
+    font-size: 20px;
+  }
+
+  .main-certificate2{
+    padding-top: .5rem;
+  }
+
+  .aboutCft a{
+    margin-top: 1rem;
+    font-size: 18px;
+    border-radius: 10%;
+    padding:5px;
+  }
+
+  .aboutCft a:hover{
+    font-size: 19px;
+  }
+
+  /*----project section----*/
+  .projectSection{
+    height:120vh;
+  }
+  
+  .outerDiv{
+    width: 100%;
+    padding-top:8rem;
+  }
+  
+  .projectDiv{
+    display:grid;
+    flex-direction:column;
+    width : 100%;
+  }
+  
+  .ProjectDetails{
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+    font-size: 1.2rem;
+    padding:2rem 7rem;
+  }
+  
+  .ProjectDetails a{
+    font-size: 21px;
+    margin-top: .5rem;
+  }
+  
+  .ProjectDetails a:hover{
+    font-size: 21.5px;
+  }
+  
+  .ProjectDetails a i{
+    margin-right: 1rem;
+    font-size: 24px;
+  }
+  
+  .ProjectDetails a i:hover{
+    font-size: 24.5px;
+  }
+  
+  .ProjectDetails span{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+  
+  .newswebsite{
+    height:15rem;
+    width :38rem;
+    padding :0rem 5rem; 
+  }
+
+  /*---contact section---*/
+  .contactSection{
+    height:164vh;
+  }
+  
+  .contactDiv{
+    width: 100%;
+    padding-top:8rem;
+  }
+  
+  .contactContainer{
+    display:grid;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .contactItem{
+    display:flex;
+    margin: 2rem;
+  }
+  
+  .contactDetails {
+    text-align: left;
+    font-size: 18px;
+    padding:2rem 4rem;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width:100%;
+    padding:0rem 5rem 5rem 5rem;
+  }
+}
+
+
+@media(min-width : 751px) and (max-width : 900px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .home{
+    height:110vh;
+  }
+
+  .head {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5px;
+  }
+  
+  .logo {
+    padding-left: 1rem;
+  }
+  
+  .navBar a {
+    text-decoration: none; 
+    padding:10px;
+    margin-right:10px;
+  }
+
+  .navBar a:hover{
+    font-size: 21px;
+  }
+
+  /*---Home Button---*/
+  
+  .aboutHome {
+    font-size: 25px;
+    padding:10px;
+    line-height:1.4;
+    padding-top:4rem;
+  }
+
+  .aboutHome h1, .aboutHome h2 {
+    margin: 0px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Pic {
+    max-width: 100%;
+    height: 20rem; 
+  }
+
+  .readBtn {
+    font-size: 19px;
+    margin-top: 3px;
+    padding: 10px;
+  }
+
+  .readBtn:hover {
+    font-size: 20px;
+  }
+
+  /*-----about section-----*/
+  .about{
+    height:110vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image2{
+    width:100%;
+    padding-top: 1rem;
+  }
+
+  .aboutPic{
+    height: 18rem;
+  }
+
+  .aboutMe{
+    width: 100%;
+    line-height: 1.2;
+    margin-top: 1rem;
+  }
+
+  .aboutMe h1{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .bioData{
+    font-size: 22px;
+    padding:.5rem 2rem;
+  }
+
+  .socialMedia{
+    width:100%;
+    justify-content: center;
+    gap:28px;
+    padding:0.7rem 0rem 0.7rem 0rem;
+  }
+
+  .socialMedia a{
+    font-size: 30px;
+  }
+
+  .socialMedia a:hover{
+    font-size: 31px;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .btn:hover{
+    font-size: 29px;
+  }
+
+  /*----Skillss----*/
+  .mainDiv {
+    padding-left:1rem;
+  }
+  
+  .heading{
+    font-size: 2rem;
+    margin-bottom: 3rem; 
+  }
+  
+  .skill{
+    margin-bottom: .5rem;
+  }
+  
+  .htmlLogo{
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .cssLogo{
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .jsLogo{
+    font-size: 2.5rem;
+    padding-top: 0.3rem;
+    margin-left: 0px;
+  }
+  .tailwindLogo{
+    height: 4.5rem;
+    width:2.8rem;
+    margin-left: -7px;
+    padding-top: 20px;
+  }
+  .reactLogo{
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    margin-left: 0px;
+  }
+  
+  .progress{
+    width:18rem;
+    margin-left: 3rem;
+  }
+  
+  .skill-name{
+    font-size:17px;
+    font-weight: 600;
+    margin : 15px 0;
+  }
+  
+  .skill-bar,.skill-per{
+    height : 12px;
+  }
+
+  /*-----Certificate section-----*/
+  .certificateSection{
+    height:175vh;
+  }
+
+  .certificates{
+    width: 100%;
+    padding-top:8rem;
+  }
+
+  .heading2 h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .certificateDiv{
+    display: grid;
+    padding:2.5rem;
+    gap: 3rem;
+    font-size: 20px;
+  }
+
+  .main-certificate2{
+    padding-top: .5rem;
+  }
+
+  .aboutCft a{
+    margin-top: 1rem;
+    font-size: 18px;
+    border-radius: 10%;
+    padding:5px;
+  }
+
+  .aboutCft a:hover{
+    font-size: 19px;
+  }
+
+  /*----project section----*/
+  .projectSection{
+    height:100vh;
+  }
+  
+  .outerDiv{
+    width: 100%;
+    padding-top:8rem;
+  }
+  
+  .projectDiv{
+    display:flex;
+    align-items: center;
+    width : 100%;
+    padding:0rem 1rem;
+  }
+  
+  .ProjectDetails{
+    width :50%;
+    font-size: 1.2rem;
+    padding:3px;
+    margin-top: 2rem;
+  }
+
+  .ProjectDetails span{
+    font-size:30px;
+  }
+  
+  .ProjectDetails a i{
+    margin-right: 1rem;
+    font-size: 22px;
+  }
+  
+  .ProjectDetails a i:hover{
+    font-size: 22.5px;
+  }
+
+  .picture{
+    width:60%;
+  }
+  
+  .newswebsite{
+    height:17rem;
+    padding:2rem;
+    width:auto;
+  }
+
+  /*---contact section---*/
+  .contactSection{
+    height:100vh;
+  }
+  
+  .contactDiv{
+    width: 100%;
+    padding-top:8rem;
+  }
+  
+  .contactContainer{
+    display:flex;
+  }
+  
+  .contactItem{
+    display:flex;
+    margin: 2rem;
+    font-size: 15px;
+  }
+  
+  .contactDetails {
+    padding:2rem;
+    width:50%;
+  }
+  
+  .contactForm {
+    padding-right:2rem;
+  }
+}
+
+@media(min-width : 901px) and (max-width:1200px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .home{
+    height:110vh;
+  }
+
+  .head {
+    height:7rem;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 8px;
+  }
+  
+  .logo {
+    padding-left: 1rem;
+  }
+  
+  .navBar a {
+    text-decoration: none; 
+    padding:10px;
+    margin-right:18px;
+  }
+
+  .navBar a:hover{
+    font-size: 23px;
+  }
+
+  /*---Home Button---*/
+  
+  .aboutHome {
+    font-size: 25px;
+    padding:10px;
+    line-height:1.4;
+    padding-top:4rem;
+  }
+
+  .aboutHome h1, .aboutHome h2 {
+    margin: 0px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Pic {
+    max-width: 100%;
+    height: 20rem; 
+  }
+
+  .readBtn {
+    font-size: 19px;
+    margin-top: 3px;
+    padding: 10px;
+  }
+
+  .readBtn:hover {
+    font-size: 20px;
+  }
+
+  /*-----about section-----*/
+  .about{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image2{
+    width:60%;
+    padding-top: 1rem;
+  }
+
+  .aboutPic{
+    height: 21rem;
+  }
+
+  .aboutMe{
+    width: 100%;
+    line-height: 1.2;
+    margin-top: 6rem;
+  }
+
+  .aboutMe h1{
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .bioData{
+    font-size: 22px;
+    padding:.5rem 1rem;
+  }
+
+  .socialMedia{
+    width:100%;
+    justify-content: center;
+    gap:28px;
+    padding:0.7rem 0rem 0.7rem 0rem;
+  }
+
+  .socialMedia a{
+    font-size: 30px;
+  }
+
+  .socialMedia a:hover{
+    font-size: 31px;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .btn:hover{
+    font-size: 29px;
+  }
+
+  /*----Skillss----*/
+  .mainDiv {
+    padding-left:1rem;
+  }
+  
+  .heading{
+    font-size: 2rem;
+    margin-bottom: 3rem; 
+  }
+  
+  .progress{
+    width:18rem;
+    margin-left: 3rem;
+  }
+  
+  .skill-name{
+    font-size:17px;
+    font-weight: 600;
+    margin : 15px 0;
+  }
+  
+  .skill-bar,.skill-per{
+    height : 12px;
+  }
+
+  /*-----Certificate section-----*/
+  .certificateSection{
+    height:105vh;
+  }
+
+  .heading2 h1{
+    margin-bottom: 1rem;
+  }
+
+  .certificateDiv{
+    display: flex;
+    font-size: 20px;
+  }
+
+  /*----project section----*/
+  .projectSection{
+    height:100vh;
+  }
+  
+  .outerDiv{
+    width: 100%;
+    padding-top:9rem;
+  }
+  
+  .projectDiv{
+    display:flex;
+    align-items: center;
+    width : 100%;
+    padding:0rem 1rem;
+  }
+  
+  .ProjectDetails{
+    width : 50%;
+    font-size: 1.3rem;
+  }
+  
+  .ProjectDetails a i{
+    margin-right: 1rem;
+    font-size: 24px;
+  }
+  
+  .ProjectDetails a i:hover{
+    font-size: 24.5px;
+  }
+  
+
+  .picture{
+    width:60%;
+  }
+  
+  .newswebsite{
+    height:16rem;
+    width:auto;
+  }
+
+  /*---contact section---*/
+  .contactSection{
+    height:100vh;
+  }
+  
+  .contactDiv{
+    width: 100%;
+    padding-top:8rem;
+  }
+  
+  .contactContainer{
+    display:flex;
+  }
+  
+  .contactItem{
+    display:flex;
+    margin: 2rem;
+    font-size: 15px;
+  }
+  
+  .contactDetails {
+    text-align: left;
+    font-size: 20px;
+    padding:2rem 4rem;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width:100%;
+    padding:4rem;
+  }
+}
+@media(min-width:1201px){
+  body{
+    overflow-x: hidden;
+    background: linear-gradient(90deg,#6c1e2a,#7792b7);
+    color: var(--primary-color);
+  }
+  
+  .head {
+      font-size: 21px;
+      gap: 24px;
+    }
+    
+  .navBar {
+    display: flex;
+    justify-content: center;
+  }
+    
+  .navBar a {
+    margin-right:22px;
+  }
+  
+  .navBar a:hover{
+    font-size: 22px;
+  }
+}
